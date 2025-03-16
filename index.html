@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Portifólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --fundo-preto: #000000;
+            --texto-branco: #ffffff;
+            --destaque-verde: #00ff88;
+            --cinza-escuro: #1a1a1a;
+        }
+
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding-top: 60px;
+            background-color: var(--fundo-preto);
+            color: var(--texto-branco);
+        }
+
+        nav {
+            background: var(--cinza-escuro);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            border-bottom: 2px solid var(--destaque-verde);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--texto-branco);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--destaque-verde);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            min-height: 100vh;
+        }
+
+        .destaque {
+            background: var(--cinza-escuro);
+        }
+
+        .profile-img {
+            width: 200px;
+            border-radius: 50%;
+            border: 4px solid var(--destaque-verde);
+            margin: 2rem 0;
+            box-shadow: 0 0 20px var(--destaque-verde);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--destaque-verde);
+        }
+
+        th {
+            background-color: var(--cinza-escuro);
+        }
+
+        form {
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid var(--destaque-verde);
+            background-color: var(--cinza-escuro);
+            color: var(--texto-branco);
+        }
+
+        button {
+            background: var(--destaque-verde);
+            color: var(--fundo-preto);
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .redes-sociais {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .rede-social {
+            padding: 0.8rem 1.5rem;
+            color: var(--fundo-preto);
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--destaque-verde);
+            transition: 0.3s;
+        }
+
+        .rede-social:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 10px var(--destaque-verde);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            section {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#quem-sou">Quem Sou</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <center>
+            <img src="img/img_kaio.JPEG" alt="Foto de Perfil" class="profile-img">
+            <h1>Kaio Jefferson</h1>
+            <p>Desenvolvedor Full Stack e Analista de Dados </p>
+            <p style="color: var(--destaque-verde);">Computadores fazem arte, artistas fazem dinheiro.</p>
+        </center>
+    </section>
+
+    <section id="quem-sou" class="destaque">
+        
+        <center><h2>Quem Sou</h2></center> 
+            
+        <p>Graduando em Sistemas de Informação, sempre em busca de conhecimento e desafios, utilizo da minha experiência em projetos e lógica computacional para solucionar o seu problema!</p>
+        
+        <h3>Tecnologias:</h3>
+        <ul>
+            <li>▸ Python</li>
+            <li>▸ JavaScript, HTML e CSS</li>
+            <li>▸ Bancos de dados SQL/MySQL</li>
+        </ul>
+
+        <h3>Cursos:</h3>
+        <ul>           
+            <li>▸ Marketing Digital</li>
+            <li>▸ Economia do Trabalho</li>
+            <li>▸ Administração Financeira</li>
+        </ul>
+
+        <h3>Formação Acadêmica:</h3>
+        <ul>           
+            <li>▸ Engenharia Civil - UFCG</li>
+            <li>▸ Sistemas de Informação - Unifacisa</li>
+        </ul>
+
+        <h3>Carreira</h3>
+        <ul>           
+            <li>▸ Analista de Meios de Pagamentos - Inter</li>
+        </ul>
+    </section>
+
+    <section id="servicos">
+        <center><h2>Serviços</h2>
+        </center>
+        <table>
+            <tr>
+                <th>Serviço</th>
+                <th>Descrição</th>
+                <th>Tecnologias</th>
+            </tr>
+            <tr>
+                <td>Desenvolvimento Front-end</td>
+                <td>Sistemas de site web</td>
+                <td>JavaScript, HTML, CSS</td>
+            </tr>
+            <tr>
+                <td>Densevolvimento Back-end</td>
+                <td>Sistmas para integração de sites</td>
+                <td>Python, MySQL</td>
+            </tr>
+            <tr>
+                <td>Analise de Dados</td>
+                <td>Infográficos, Dashbords e Tabelas</td>
+                <td>Excel, Power BI, R, Python</td>
+            </tr>
+            <tr>
+                <td>Conciliações Bancárias e Help Desk</td>
+                <td>Ajustes, Automações, Encaminhamentos</td>
+                <td>Salesforce, Jira</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contato" class="destaque">
+        <center>
+            <h2>Contato</h2>
+            <p>Se você está interessado nos meus serviços e não pode falar agora, preencha o formulário abaixo. Entraremos em contato o mais breve possível.</p>
+       
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea rows="5" placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        
+            <p>Gostou do que viu? Conecte-se comigo nas redes sociais para mais novidades, dicas e atualizações! Clique nos ícones abaixo e fique por dentro de tudo.</p>
+        </center>
+
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/kaiojnasc/" class="rede-social">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a href="https://www.instagram.com/kaiojnsc/" class="rede-social">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="https://wa.me/5583987612355" class="rede-social">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+            <a href="https://github.com/kaiojnsc" class="rede-social">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+        </div>
+    </section>
+</body>
+</html>
