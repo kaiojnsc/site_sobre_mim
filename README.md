@@ -1,7 +1,8 @@
 ```markdown
 # Meu Portfólio Pessoal 🚀
 
-Um site moderno e responsivo para apresentação profissional, construído com HTML e CSS. Projeto focado em design minimalista com paleta preto/branco/verde neon.
+Um site moderno e responsivo para apresentação profissional, construído com HTML e CSS.
+Projeto focado em design minimalista com paleta preto/branco/verde neon.
 
 Para mais detalhes, acesse pelo site: https://site-sobre-mim-eight.vercel.app/
 
